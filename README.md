@@ -6,6 +6,10 @@ C'est ici que je vais stocker les ressources `~code` des différents cours que j
 
 Plus simple pour les mises à jour des corrections, etc.
 
+## Ressources
+
+- [Packs débutants / 🏭 Boilerplates](./packs-debutants/)
+
 ## Credits
 
 Masamune / Maxime Chevasson
