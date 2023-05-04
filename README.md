@@ -9,6 +9,7 @@ Plus simple pour les mises à jour des corrections, etc.
 ## Ressources
 
 - [Packs débutants / 🏭 Boilerplates](./packs-debutants/)
+- [✅ Corrections](./corrections/)
 
 ## Credits
 
