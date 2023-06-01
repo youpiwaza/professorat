@@ -16,31 +16,146 @@ Plus simple pour les mises à jour des corrections, etc.
 - [PHP et SQL, introduction (2 jours)](https://drive.google.com/drive/folders/1XXDmagboeM_dmdOAlzXsCf7Y0r_5Nc8g?usp=share_link)
 - [ReactJs, introduction (4 jours)](https://drive.google.com/drive/folders/1SjX5qvEGVMGbZiB5eq0cEIo_LuZ5-7-7?usp=share_link)
 
-## Process ajout de nouveaux cours
+## 🏭 Process nouvelle mission
 
-1. Réutiliser les [ressources prof](https://drive.google.com/drive/folders/18xqLGqmPkGqhSIuAFlM_DOz_CIfkJFwM?usp=share_link) afin de créer les bases de présentations de cours
-2. Vérifier la présence de cours/ressources existants
-3. Dupliquer présentation de moi
-4. Cours
-   1. Présentation du cours, de la matière
+1. 📝 Récupérer informations sur [admin evogue > contrats](https://evogue.fr/formateur/contrats)
+   1. Période
+      1. Si à cheval sur plusieurs mois, dater de la date de début
+   2. Nombre de jours
+   3. Matière
+2. 💬 Nommer correctement `YYMM - Mission PERIODE - XX jours - MATIERE - Presentiel🚄||Visio🎥`
+   1. Ex: `2304 - Mission fin avril 2023 - 4 jours - ReactJs - Visio🎥`
+   2. Créer dossier [drive devis](https://drive.google.com/drive/folders/1HbdFkhxNmNFAzo3BcMbmf4l-bYOYYhkX)
+   3. Créer dossier [drive factures](https://drive.google.com/drive/folders/1cMgHqCLoBZPZb9nkJzn7mXevOZTOfeCA)
+   4. Créer sous libellé [Gmail](https://mail.google.com/mail/u/0/#label/Auto+entrepreneur%2FEvogue+%F0%9F%8E%93)
+   5. 📂 Cours > DossierS drive publique [Dupliquer BP](https://drive.google.com/drive/folders/18xqLGqmPkGqhSIuAFlM_DOz_CIfkJFwM)
+      1. 💩 Si KO dispo dans mes documents / YYMM - Misson PERIODE - SUJET - MATIERE > Uploader
+      2. Ecrémer en fonction de visio ou non
+   6. ❤️ Favoris > Créer dossier
+   7. Créer github/CLIENT/TODO à partir de cette liste, afin de pouvoir check ✅ au fur & a mesure par mission
+3. ✒️ Contrat/s
+   1. 🚨 Si mission à cheval sur plusieurs mois > un contrat par mois
+   2. 🚨🚄💸 Si présentiel, doit comprendre les frais de transports
+   3. Récupérer sur l'admin
+   4. Parapher, Signer 1ère 🚨 & dernière page
+   5. Renvoyer sur admin evogue
+   6. Ajouter aux devis [drive](https://drive.google.com/drive/folders/1HbdFkhxNmNFAzo3BcMbmf4l-bYOYYhkX)
+4. [Facture/s](https://drive.google.com/drive/folders/1cMgHqCLoBZPZb9nkJzn7mXevOZTOfeCA)
+   1. 🚨 Si mission à cheval sur plusieurs mois > un contrat par mois
+   2. 🚨 Reprendre dates, horaires, sujet, 🚨🚨🚨 nombre d'heures du **contrat**
+   3. Editée en PDF
+   4. Envoyée @ `Envoi factures evogue <equipe@evogue.fr>`
+      1. Sujet `[Facture] Maxime Chevasson / PERIODE / DUREE / MATIERE / Pres||Visio`
+         1. Exemple `[Facture] Maxime Chevasson / Avril 2023 / 2 journées de cours / ReactJs / Visio`
+         2. 💥 Pas oublier la pièce jointe
+         3. 2 libellés : celui de la mission & administration/factures/année
+         4. Corps
+
+```txt
+Bonjour,
+
+Vous trouverez ci-joint ma facture "EVO2404232J" relative aux 2 journées de cours données fin avril 2023, ayant pour sujet "ReactJs".
+
+N'hésitez pas si vous avez des questions ou des remarques.
+
+Bonne journée
+```
+
+   1. Ajout au [drive](https://drive.google.com/drive/folders/1cMgHqCLoBZPZb9nkJzn7mXevOZTOfeCA)
+   2. 💸 Maj Paiement & impôts
+
+---
+
+1. 👌 Organisation
+   1. 📅 Ajout précis à l'emploi du temps
+   2. ⏰ Ajout réveils portable
+   3. 🎥 Si visio
+      1. Connecté 15 minutes avant le début des cours
+      2. 📌🔑 Noter & tester identifiants
+   4. 🚄 Si présentiel
+      1. Noter les horaires de transports
+      2. Prévoir éventuellement hébergement
+   5. 📧 Voir si recommandations dans mail
+
+---
+
+## 🏭 Process ajout de nouveaux cours
+
+1. ✨ Récupérer existant
+   1. Vérifier la présence de cours/ressources sur le site evogue
+      1. [Calendrier > Docs utiles](https://evogue.fr/formateur/calendrier)
+      2. [Cours](https://evogue.fr/formateur/cours)
+   2. Vérifier si cours existants sur mon [Github](https://github.com/youpiwaza/professorat)
+   3. Vérifier si présentations existantes sur mon [drive](https://drive.google.com/drive/folders/1Ml4K9qWp0G9xeQ30hLgMKCSXafCZhuPI)
+   4. Si besoin maj en fonction des technologies [Présentation (bp)](https://drive.google.com/drive/folders/1OidiH-jyd4mu5hdgTLX-foFiCDgIPdHI)
+2. 🔨 Cours
+   1. 🧠⚡️ Si création de cours > Créer marque Masamune, éventuellement débrander après
+      1. Créer dans [Ressources prof > Cours](https://drive.google.com/drive/folders/1Ml4K9qWp0G9xeQ30hLgMKCSXafCZhuPI)
+   2. 🏭 Dupliquer [BP Présentation](https://drive.google.com/drive/folders/1hD38J5DtutuZIHiOGehLwFd-wbFezhtt)
+      1. [Plus fourni](https://docs.google.com/presentation/d/114-bWJ9Tmi7E0ArVQ84is7ipUlOD1WXZxgWHmeHB_Eo/edit#slide=id.g1f9aecfdd77_0_14)
+   3. Présentation du cours, de la matière
       1. 🧠 Objectifs Théoriques
       2. 💪 Objectifs Pratiques
       3. 👷 Pré-requis
       4. 🌱 Suggestions de projets
-   2. 📅 Créer la trame du cours en fonction de la durée, et découper
-   3. 🔨 Supports de cours : théorie
-   4. 🔨 Supports de cours : exercices
+   4. 📅 Créer la trame du cours en fonction de la durée, et découper
+   5. 🔨 Supports de cours : théorie
+   6. 🔨 Supports de cours : exercices
       1. 🔨🏭 Boilerplate
          1. 💾 Github
       2. 🔨✅ Corrections
          1. 💾 Github
-   5. 🔨 Supports de cours : évaluation (Projet ou Quizz)
-   6. 🔨 Ressources supplémentaires
-   7. 🔨 Poursuite si la techno vous botte
-   8. 👌 Vérifier sommaires des presentation
-   9. 👌🔗 Tinyurl `tinyurl.com/masamune-cours-MATIERE` du dossier de cours + ajout dans un txt alakon à la racine
-   10. 👌🔗 Ajouter / Vérifier les liens des présentations
-   11. 💖 Ajout liens au dossier favoris
+   7. 🔨 Supports de cours : évaluation (Projet ou Quizz)
+   8. 🔨 Ressources supplémentaires
+   9. 🔨 Poursuite si la techno vous botte
+3. 👌 Vérifier
+   1. Sommaires des presentations
+   2. 🔗 Ajouter / Vérifier les liens des présentations
+   3. 🔗 Tinyurl `tinyurl.com/masamune-cours-MATIERE` du drive de cours
+      1. Ajout dans presentation
+      2. Ajout fichier txt alakon à la racine
+      3. 💖 Ajout liens au dossier favoris
+4. 💾 Sauvegarder
+   1. Github
+   2. Liste de liens
+5. ⬆️ Ajouter cours au drive dédié boite SUPPORT COURS
+
+---
+
+## ♻️ Process Tous les jours
+
+1. ✋ Vérifier présence
+   1. 🎥 Les captures d'écrans matin et soir pour chaque jour avec l'affichage du jour et de l'heure de votre écran apparent
+   2. 💾 Sauvegarder
+      1. Mon drive
+      2. Evogue emargement
+      3. Client
+   3. Remplir emargement
+      1. Mon drive
+      2. Evogue emargement
+      3. Client
+2. ⬆️ Maj cours **actualisés** (live coding) dans dossier client
+
+---
+
+## 👋 Process Fin de formation
+
+1. Elèves
+   1. 🌱 Rappel : Présentation > Suggestions de projets & Poursuite si la techno vous botte
+   2. ⚡️ Bonus si il y a le temps
+   3. Remplir Questionnaires de satisfaction
+2. Wam
+   1. ✅ Correction projays
+      1. 💾 Drive > Elèves > Projets élèves
+   2. 💾 Drive > Elèves > 🏆 Évaluations élèves
+      1. Remplir les [notes /20 étudiants](https://docs.google.com/spreadsheets/d/1NxDo6PZf6vviiDWyK3-UiKPZB1bD9ZG-/edit#gid=886766735)
+      2. Remplir [fiche de suivi étudiants](https://docs.google.com/document/d/1A-PEmVYV8dtTM13jTy7xvIxcLadfElXltI6aoaAnTVY/edit)
+      3. ~[Drive evogue à remplir](https://evogue.fr/formateur/evaluations)
+   3. 📧 Mail à Evogue
+   4. ⬆️ Maj github & drive avec live coding
+   5. ⬆️ `professorat\README.md` ressources & Liste de cours
+
+---
 
 ## Credits
 
