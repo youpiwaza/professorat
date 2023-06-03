@@ -25,44 +25,55 @@ Plus simple pour les mises à jour des corrections, etc.
    3. Matière
 2. 💬 Nommer correctement `YYMM - Mission PERIODE - XX jours - MATIERE - Presentiel🚄||Visio🎥`
    1. Ex: `2304 - Mission fin avril 2023 - 4 jours - ReactJs - Visio🎥`
-   2. Créer dossier [drive devis](https://drive.google.com/drive/folders/1HbdFkhxNmNFAzo3BcMbmf4l-bYOYYhkX)
-   3. Créer dossier [drive factures](https://drive.google.com/drive/folders/1cMgHqCLoBZPZb9nkJzn7mXevOZTOfeCA)
-   4. Créer sous libellé [Gmail](https://mail.google.com/mail/u/0/#label/Auto+entrepreneur%2FEvogue+%F0%9F%8E%93)
-   5. 📂 Cours > DossierS drive publique [Dupliquer BP](https://drive.google.com/drive/folders/18xqLGqmPkGqhSIuAFlM_DOz_CIfkJFwM)
+   2. Créer github/CLIENT/TODO à partir de cette liste, afin de pouvoir check ✅ au fur & a mesure par mission
+   3. Créer dossier [drive devis](https://drive.google.com/drive/folders/1HbdFkhxNmNFAzo3BcMbmf4l-bYOYYhkX)
+   4. Créer dossier [drive factures POUR LE MOIS SI BESOIN](https://drive.google.com/drive/folders/1cMgHqCLoBZPZb9nkJzn7mXevOZTOfeCA)
+   5. Créer sous libellé [Gmail](https://mail.google.com/mail/u/0/#label/Auto+entrepreneur%2FEvogue+%F0%9F%8E%93)
+   6. 📂 Cours > DossierS drive publique [Dupliquer BP](https://drive.google.com/drive/folders/18xqLGqmPkGqhSIuAFlM_DOz_CIfkJFwM)
       1. 💩 Si KO dispo dans mes documents / YYMM - Misson PERIODE - SUJET - MATIERE > Uploader
       2. Ecrémer en fonction de visio ou non
-   6. ❤️ Favoris > Créer dossier
-   7. Créer github/CLIENT/TODO à partir de cette liste, afin de pouvoir check ✅ au fur & a mesure par mission
+   7. ❤️ Favoris > Créer dossier
+   8. Maj tous les liens vers les ressources ^
 3. ✒️ Contrat/s
-   1. 🚨 Si mission à cheval sur plusieurs mois > un contrat par mois
-   2. 🚨🚄💸 Si présentiel, doit comprendre les frais de transports
-   3. Récupérer sur l'admin
-   4. Parapher, Signer 1ère 🚨 & dernière page
-   5. Renvoyer sur admin evogue
-   6. Ajouter aux devis [drive](https://drive.google.com/drive/folders/1HbdFkhxNmNFAzo3BcMbmf4l-bYOYYhkX)
-4. [Facture/s](https://drive.google.com/drive/folders/1cMgHqCLoBZPZb9nkJzn7mXevOZTOfeCA)
-   1. 🚨 Si mission à cheval sur plusieurs mois > un contrat par mois
-   2. 🚨 Reprendre dates, horaires, sujet, 🚨🚨🚨 nombre d'heures du **contrat**
-   3. Editée en PDF
-   4. Envoyée @ `Envoi factures evogue <equipe@evogue.fr>`
-      1. Sujet `[Facture] Maxime Chevasson / PERIODE / DUREE / MATIERE / Pres||Visio`
-         1. Exemple `[Facture] Maxime Chevasson / Avril 2023 / 2 journées de cours / ReactJs / Visio`
+   1. `YYMMJJ---Mission PERIODE - XX jours - MATIERE - Presentiel||Visio---contrat-2023-06-Maxime-CHEVASSON---signe.pdf`
+   2. 🚨 Si mission à cheval sur plusieurs mois > un contrat par mois
+   3. 🚨🚄💸 Si présentiel, doit comprendre les frais de transports
+   4. Récupérer sur l'admin
+   5. "Lu & approuvé", Parapher, Signer 1ère 🚨 & dernière page
+   6. Renvoyer sur admin evogue
+   7. Ajouter aux devis [drive](https://drive.google.com/drive/folders/1HbdFkhxNmNFAzo3BcMbmf4l-bYOYYhkX)
+4. [Facture PERIODE](https://drive.google.com/drive/folders/1cMgHqCLoBZPZb9nkJzn7mXevOZTOfeCA)
+   1. 💥 Regrouper les factures en une seule facture par mois 💥 [MAIL SI JAMAIS ILS RE-CASSENT LES BURNES](https://mail.google.com/mail/u/0/#inbox/KtbxLwgptBbwPQKZQLcChzvkqBfLfnSRwg)
+      1. 🚨 Si mission à cheval sur plusieurs mois > une facture par mois
+   2. `YYMMDD Masamune - Facture EVOMMYY3J - Evogue - PERIODE - XX jours`
+   3. Si facture pour le mois concernée n'existe pas, créer, sinon mettre à jour
+   4. 🚨 Reprendre dates, horaires, sujet, 🚨🚨🚨 nombre d'heures du/des **contrat/S**
+   5. Editée en PDF
+   6. Envoyée @ `Envoi factures evogue <equipe@evogue.fr>, Liam Tardieu <liamtardieu@evogue.fr>`
+      1. Sujet `[Facture] Maxime Chevasson / PERIODE / DUREE`
+         1. Exemple `[Facture] Maxime Chevasson / Juin 2023 / 2 journées de cours`
          2. 💥 Pas oublier la pièce jointe
-         3. 2 libellés : celui de la mission & administration/factures/année
+         3. 1+n libellés : celui de la mission & administration/factures/année
          4. Corps
 
 ```txt
 Bonjour,
 
-Vous trouverez ci-joint ma facture "EVO2404232J" relative aux 2 journées de cours données fin avril 2023, ayant pour sujet "ReactJs".
+Vous trouverez ci-joint ma facture "EVO2404232J" pour le mois de Juin 2023, comptant 2 journées de cours :
+
+- 20/01/2023 > "ReactJs"
+- 20/01/2023 > "ReactJs"
+- 20/01/2023 > "ReactJs"
+- 20/01/2023 > "ReactJs"
 
 N'hésitez pas si vous avez des questions ou des remarques.
 
 Bonne journée
 ```
 
-   1. Ajout au [drive](https://drive.google.com/drive/folders/1cMgHqCLoBZPZb9nkJzn7mXevOZTOfeCA)
-   2. 💸 Maj Paiement & impôts
+   1. [Lien mail d'envoi](XXX)
+   2. Ajout au [drive](https://drive.google.com/drive/folders/1cMgHqCLoBZPZb9nkJzn7mXevOZTOfeCA)
+   3. 💸 Maj Paiement & impôts
 
 ---
 
@@ -100,10 +111,12 @@ Bonne journée
       4. 🌱 Suggestions de projets
    4. 📅 Créer la trame du cours en fonction de la durée, et découper
    5. 🔨 Supports de cours : théorie
+      1. [Exemple](https://docs.google.com/presentation/d/1h1Kk4FDRDp4TDPWw637cBnHrXvwEM2nJM8o4tzWvOAY/edit#slide=id.g20f9d5d5cf0_0_9)
    6. 🔨 Supports de cours : exercices
-      1. 🔨🏭 Boilerplate
+      1. [Exemples](https://docs.google.com/presentation/d/1xhXaU_t2WR67_nrNF1cCBWDC4Uj8APptNWZMdFTRDpA/edit#slide=id.g23a7f1f8c04_0_0)
+      2. 🔨🏭 Boilerplate
          1. 💾 Github
-      2. 🔨✅ Corrections
+      3. 🔨✅ Corrections
          1. 💾 Github
    7. 🔨 Supports de cours : évaluation (Projet ou Quizz)
    8. 🔨 Ressources supplémentaires
@@ -152,7 +165,9 @@ Bonne journée
       2. Remplir [fiche de suivi étudiants](https://docs.google.com/document/d/1A-PEmVYV8dtTM13jTy7xvIxcLadfElXltI6aoaAnTVY/edit)
       3. ~[Drive evogue à remplir](https://evogue.fr/formateur/evaluations)
    3. 📧 Mail à Evogue
-   4. ⬆️ Maj github & drive avec live coding
+   4. ⬆️ Maj avec cours
+      1. github professorat
+      2. drive
    5. ⬆️ `professorat\README.md` ressources & Liste de cours
 
 ---
