@@ -1,0 +1,15 @@
+.App {
+  background: #fbfbfb;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.MyButton {
+  border-radius: 4px;
+  font-size: 2em;
+}
+
+.MyButtonImg {
+  height: 50px;
+  width: 50px;
+}

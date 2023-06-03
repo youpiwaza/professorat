@@ -1,0 +1,76 @@
+body {
+  background: rgb(13, 13, 13);
+  background: linear-gradient(
+    159deg,
+    rgba(13, 13, 13, 1) 58%,
+    rgba(167, 191, 78, 1) 88%
+  );
+  background-size: cover;
+
+  color: #f2f2f2;
+  min-height: 100vh;
+  width: 100vh;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 15em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #d3f263;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Header {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+.titre {
+  padding: 20px;
+}
+.Encart {
+  padding: 2em;
+  margin: 1em 5em;
+  border: solid white 1px;
+  border-left: none;
+  border-right: none;
+}
+
+.Article {
+  width: 200px;
+  padding: 0.5em;
+  border: #d4f266 1px solid;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+.Article div {
+  margin-bottom: 10px;
+}
+
+.Grille {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Footer {
+  border-top: 1px double #0d0d0d;
+  color: #0d0d0d;
+  margin: 1em;
+  padding: 1em;
+}

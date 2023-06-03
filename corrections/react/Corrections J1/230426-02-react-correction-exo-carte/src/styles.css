@@ -1,0 +1,33 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  /* display: flex; */
+}
+
+.Carte {
+  border-radius: 0.6em;
+  border: 1px solid #0074d9;
+  margin-bottom: 1em;
+  overflow: hidden;
+  width: 200px;
+}
+
+.Carte .content {
+  background: #7fdbff;
+  border-top: 1px solid #0074d9;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+.Carte img {
+  height: auto;
+  width: 200px;
+}
+
+.Carte button {
+  background: #0d6efd;
+  border: none;
+  border-radius: 0.6em;
+  color: #fbfbfb;
+  padding: 0.4em 0.8em;
+}

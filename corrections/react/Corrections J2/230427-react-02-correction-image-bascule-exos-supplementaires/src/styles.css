@@ -1,0 +1,20 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.ImageBascule {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.ImageBascule img {
+  height: auto;
+}
+
+.grille {
+  display: flex;
+}

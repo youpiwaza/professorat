@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.ImageBascule {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.ImageBascule img {
+  height: auto;
+}
+
+.Armee {
+  border: thick double #001f3f;
+  padding: 0.5em;
+}
+
+img {
+  height: 100px;
+}
+
+.pietaille {
+  border: thick double #3d9970;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+.Eclaireur {
+  display: flex;
+  flex-direction: column;
+}
+
+.Eclaireur button {
+  cursor: pointer;
+}
