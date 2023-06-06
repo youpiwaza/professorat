@@ -1,0 +1,13 @@
+{
+  "name": "02-grafikart-lire-et-ecrire-des-fichiers",
+  "version": "1.0.0",
+  "description": "L'url du [tuto](https://grafikart.fr/tutoriels/nodejs-filesystem-2083).",
+  "main": "01-lire-un-fichier.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

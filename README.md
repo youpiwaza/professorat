@@ -13,6 +13,7 @@ Plus simple pour les mises à jour des corrections, etc.
 
 ## 🔗🎓 Liste des cours
 
+- [Javascript, introduction (1 journée)](https://drive.google.com/drive/folders/1F-TFOuPiPOiX7_eAcC99FV_Rdc60LuOq?usp=sharing)
 - [PHP et SQL, introduction (2 jours)](https://drive.google.com/drive/folders/1XXDmagboeM_dmdOAlzXsCf7Y0r_5Nc8g?usp=share_link)
 - [ReactJs, introduction (4 jours)](https://drive.google.com/drive/folders/1SjX5qvEGVMGbZiB5eq0cEIo_LuZ5-7-7?usp=share_link)
 
@@ -23,6 +24,17 @@ Plus simple pour les mises à jour des corrections, etc.
       1. Si à cheval sur plusieurs mois, dater de la date de début
    2. Nombre de jours
    3. Matière
+   4. Nom de l'école
+   5. Elèves
+      1. Nom de la classe
+      2. Nombre
+      3. Niveau en code
+   6. 🎥 Si visio
+      1. 📌🔑 Noter & tester identifiants
+   7. 🚄 Si présentiel
+      1. Adresse physique exacte
+      2. Nom salle de classe
+   8. Modalités d'évaluation
 2. 💬 Nommer correctement `YYMM - Mission PERIODE - XX jours - MATIERE - Presentiel🚄||Visio🎥`
    1. Ex: `2304 - Mission fin avril 2023 - 4 jours - ReactJs - Visio🎥`
    2. Créer github/CLIENT/TODO à partir de cette liste, afin de pouvoir check ✅ au fur & a mesure par mission
@@ -82,7 +94,6 @@ Bonne journée
    2. ⏰ Ajout réveils portable
    3. 🎥 Si visio
       1. Connecté 15 minutes avant le début des cours
-      2. 📌🔑 Noter & tester identifiants
    4. 🚄 Si présentiel
       1. Noter les horaires de transports
       2. Prévoir éventuellement hébergement
