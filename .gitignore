@@ -5,7 +5,7 @@
 *.tar.gz
 *.tar.bz2
 *.gz
-*.zip
+# *.zip
 *.bz2
 *.rar
 
