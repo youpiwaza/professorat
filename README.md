@@ -13,7 +13,9 @@ Plus simple pour les mises à jour des corrections, etc.
 
 ## 🔗🎓 Liste des cours
 
+- [Angular, introduction (2 jours)](https://drive.google.com/drive/folders/1aUuN9bGWk53DkeJYjrw20dhyDttKvjLX?usp=sharing)
 - [Javascript, introduction (1 journée)](https://drive.google.com/drive/folders/1F-TFOuPiPOiX7_eAcC99FV_Rdc60LuOq?usp=sharing)
+- [Node JS & Express JS, introduction (2 jours)](https://drive.google.com/drive/folders/1P3APT__tliOp9P0lCBZ9x4BlyWIJm4vu?usp=sharing)
 - [PHP et SQL, introduction (2 jours)](https://drive.google.com/drive/folders/1XXDmagboeM_dmdOAlzXsCf7Y0r_5Nc8g?usp=share_link)
 - [ReactJs, introduction (4 jours)](https://drive.google.com/drive/folders/1SjX5qvEGVMGbZiB5eq0cEIo_LuZ5-7-7?usp=share_link)
 
