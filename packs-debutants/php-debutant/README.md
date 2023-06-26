@@ -4,7 +4,7 @@ Ce fichier contient la documentation de ce projet, au format [markdown](https://
 
 ## Récupération du projet
 
-Récupérez ce projet en cliquant sur ce lien : [https://github.com/youpiwaza/evogue/archive/refs/heads/main.zip](https://github.com/youpiwaza/evogue/archive/refs/heads/main.zip)
+Récupérez ce projet en cliquant sur ce lien : [https://github.com/youpiwaza/professorat/tree/main/packs-debutants](https://github.com/youpiwaza/professorat/archive/refs/heads/main.zip)
 
 Décompressez l'archive, puis il se trouvera dans le dossier `/ressources/packs-debutants/php-debutant/`.
 
