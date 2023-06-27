@@ -1,0 +1,5 @@
+Connexion entre PHP et MySQL - 30mn
+https://stockage.masamune.fr/videos/prof/php-sql/230627-php-sql---01---connexion-entre-php-et-mysql.mkv
+
+Correction rapide du Projet blog
+https://stockage.masamune.fr/videos/prof/php-sql/230627-php-sql---02---correction-rapide-projet-blog.mkv
