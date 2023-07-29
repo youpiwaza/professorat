@@ -53,22 +53,23 @@ Plus simple pour les mises à jour des corrections, etc.
    2. 🚨 Si mission à cheval sur plusieurs mois > un contrat par mois
    3. 🚨🚄💸 Si présentiel, doit comprendre les frais de transports
    4. Récupérer sur l'admin
-   5. "Lu & approuvé", Parapher, Signer 1ère 🚨 & dernière page
+   5. Parapher CHAQUE PAGE, 1ère page "Lu & approuvé" et signer, signer dernière page
    6. Renvoyer sur admin evogue
    7. Ajouter aux devis [drive](https://drive.google.com/drive/folders/1HbdFkhxNmNFAzo3BcMbmf4l-bYOYYhkX)
 4. [Facture PERIODE](https://drive.google.com/drive/folders/1cMgHqCLoBZPZb9nkJzn7mXevOZTOfeCA)
-   1. 💥 Regrouper les factures en une seule facture par mois 💥 [MAIL SI JAMAIS ILS RE-CASSENT LES BURNES](https://mail.google.com/mail/u/0/#inbox/KtbxLwgptBbwPQKZQLcChzvkqBfLfnSRwg)
+   1. 💥 Regrouper les factures en **une seule facture par mois** 💥 [MAIL SI JAMAIS ILS RE-CASSENT LES BURNES](https://mail.google.com/mail/u/0/#inbox/KtbxLwgptBbwPQKZQLcChzvkqBfLfnSRwg)
       1. 🚨 Si mission à cheval sur plusieurs mois > une facture par mois
    2. `YYMMDD Masamune - Facture EVOMMYY3J - Evogue - PERIODE - XX jours`
-   3. Si facture pour le mois concernée n'existe pas, créer, sinon mettre à jour
-   4. 🚨 Reprendre dates, horaires, sujet, 🚨🚨🚨 nombre d'heures du/des **contrat/S**
-   5. Editée en PDF
-   6. Envoyée @ `Envoi factures evogue <equipe@evogue.fr>, Liam Tardieu <liamtardieu@evogue.fr>`
-      1. Sujet `[Facture] Maxime Chevasson / PERIODE / DUREE`
-         1. Exemple `[Facture] Maxime Chevasson / Juin 2023 / 2 journées de cours`
-         2. 💥 Pas oublier la pièce jointe
-         3. 1+n libellés : celui de la mission & administration/factures/année
-         4. Corps
+      1. Si facture pour le mois concernée n'existe pas, créer, sinon mettre à jour
+      2. 🚨 Reprendre dates, horaires, sujet, 🚨🚨🚨 nombre d'heures du/des **contrat/S**
+      3. Date de facturation : ~28 du mois, si la mission est déjà effectuée, sinon dernier jour du mois
+      4. Editée en PDF
+      5. Envoyée @ `Envoi factures evogue <equipe@evogue.fr>, Liam Tardieu <liamtardieu@evogue.fr>`
+         1. Sujet `[Facture] Maxime Chevasson / PERIODE / DUREE`
+            1. Exemple `[Facture] Maxime Chevasson / Juin 2023 / 2 journées de cours`
+            2. 💥 Pas oublier la pièce jointe
+            3. 1+n libellés : celui de la/des mission/s & administration/factures/année
+            4. Corps
 
 ```txt
 Bonjour,
@@ -99,6 +100,7 @@ Bonne journée
    4. 🚄 Si présentiel
       1. Noter les horaires de transports
       2. Prévoir éventuellement hébergement
+      3. 💾 Drive > Mission > Justificatifs
    5. 📧 Voir si recommandations dans mail
 
 ---
@@ -136,8 +138,9 @@ Bonne journée
    9. 🔨 Poursuite si la techno vous botte
 3. 👌 Vérifier
    1. Sommaires des presentations
-   2. 🔗 Ajouter / Vérifier les liens des présentations
-   3. 🔗 Tinyurl `tinyurl.com/masamune-cours-MATIERE` du drive de cours
+   2. Durée des présentations
+   3. 🔗 Ajouter / Vérifier les liens des présentations
+   4. 🔗 Tinyurl `tinyurl.com/masamune-cours-MATIERE` du drive de cours
       1. Ajout dans presentation
       2. Ajout fichier txt alakon à la racine
       3. 💖 Ajout liens au dossier favoris
