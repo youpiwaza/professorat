@@ -1,0 +1,26 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts 06-playbook-listes.yml
+
+# 🔍 Doc : https://www.redhat.com/sysadmin/ansible-lists-dictionaries-yaml
+
+- name: Syntaxe utiliser des listes
+  hosts: 127.0.0.1
+  connection: local
+  # En gros ce sont des tableaux
+  vars:
+    ma_premiere_liste:
+      - The Beatles
+      - Led Zeppelin
+      - The Police
+      - Rush
+    
+    ma_deuxieme_liste: ['Rammstein', 'Avatar', 'Eskimo callboy', 'DJ Blyatman']
+
+  tasks:
+    - debug:
+        msg: "J'affiche la première liste : {{ ma_premiere_liste }}"
+
+    - debug:
+        msg: "J'affiche la deuxième liste : {{ ma_deuxieme_liste }}"
+...

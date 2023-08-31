@@ -1,0 +1,15 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts 11-playbook-import-tasks.yml
+
+# 🔍 Doc : https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_conditionals.html
+
+- name: "Syntaxe ré-utiliser d'autres tâches"
+  hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+    - name: "J'importe les tâches d'un autre fichier"
+      ansible.builtin.include_tasks:
+        file: 99-tasks-a-importer.yml
+...

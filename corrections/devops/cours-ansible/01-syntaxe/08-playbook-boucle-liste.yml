@@ -1,0 +1,48 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts 08-playbook-boucle-liste.yml
+
+# 🔍 Doc : https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_loops.html#iterating-over-a-dictionary
+
+- name: Syntaxe utiliser une boucle sur une liste
+  hosts: 127.0.0.1
+  connection: local
+  vars:
+    # Plusieurs manières de l'écrire
+    # packagesToInstall: ['git', 'vim', 'htop', 'zsh']
+    packagesToInstall:
+      - 'git'
+      - 'htop'
+      - 'vim'
+      - 'zsh'
+
+  tasks:
+    - name: 'Afficher chacun des packages via une boucle'
+      debug:
+        # {{ item }} est une variable réservée, populée automatiquement par la boucle
+        msg: 'Le package {{ item }}'
+      loop: "{{ packagesToInstall }}"
+
+
+
+    # La plupart des modules peuvent accepter des listes/dicos
+    # https://docs.ansible.com/ansible/latest/modules/apt_module.html#apt-module
+    - name: 'Ubuntu : installer plusieurs packages'
+      ansible.builtin.apt:
+        cache_valid_time: '3600'
+        force_apt_get: yes
+        # On réutilise le nom de la variable qui contient la liste
+        name: '{{ packagesToInstall }}'
+        update_cache: yes
+        state: latest
+    
+
+    - name: 'Afficher des éléments sans variable via une boucle'
+      debug:
+        # {{ item }} est une variable réservée, populée automatiquement par la boucle
+        msg: '{{ item }}'
+      loop: 
+        - Un premier élément
+        - Un deuxième élément
+        - Un troisième élément
+...

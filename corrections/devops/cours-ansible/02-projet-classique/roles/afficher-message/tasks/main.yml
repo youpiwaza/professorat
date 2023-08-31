@@ -1,0 +1,5 @@
+---
+- name: Un projet avec différents rôles
+  debug:
+    msg: Yay ça fonctionne !
+...

@@ -1,0 +1,18 @@
+---
+# Sera appelée dans 11-playbook-import-tasks.yml
+
+- name: Créer un fichier hello1.txt
+  ansible.builtin.file: 
+    name: hello1.txt
+    state: touch
+
+- name: Créer un fichier hello2.txt
+  ansible.builtin.file: 
+    name: hello2.txt
+    state: touch
+
+- name: Créer un fichier hello3.txt
+  ansible.builtin.file: 
+    name: hello3.txt
+    state: touch
+...

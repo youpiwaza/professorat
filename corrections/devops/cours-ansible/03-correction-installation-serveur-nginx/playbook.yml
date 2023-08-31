@@ -1,0 +1,30 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts playbook.yml
+
+# Playbook complet en local, alternative à delegate_to & local_action
+- name: Un projet avec différents rôles
+  hosts: 127.0.0.1
+  connection: local
+  vars:
+    # Utilisée dans roles/site-par-defaut/tasks/main.yml
+    # Injectées dans roles/site-par-defaut/templates/index.html.j2
+    site_titre: Un site tout simple via Ansible
+    site_description : Avec du contenu modifié à l'aide de templates
+
+    # Utilisé dans configurer-nginx & configurer-php
+    serveur_port: 8080
+
+    # Utilisé dans configurer-php
+    php_limite_ram: 1G
+
+  # Chaque rôle va se référer à son propre dossier, et exécuter la tâche principale située dans /tasks/main.yml
+  roles:
+    - installer-nginx
+    - tester-nginx
+    - site-par-defaut
+    - configurer-nginx
+    - installer-php
+    - configurer-php
+    - tester-php
+...

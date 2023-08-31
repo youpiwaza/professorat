@@ -1,0 +1,6 @@
+---
+# Utilisé afin de stocker les scripts conditionnels & evènementiels "handlers"
+# Par exemple je peux y stocker un script "redémarrage" à exécuter après une configuration, une installation, une maintenance
+#   Il ne sera exécuté qu'une fois l'ensemble de ces opérations effectuées
+#   Si et seulement si l'une de ces opérations à sucitée un changement
+...

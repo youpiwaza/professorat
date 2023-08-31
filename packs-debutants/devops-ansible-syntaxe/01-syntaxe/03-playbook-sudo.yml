@@ -1,0 +1,23 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts 03-playbook-sudo.yml
+
+- name: Syntaxe surcharger les droits
+  hosts: 127.0.0.1
+  connection: local
+
+  # Le playbook sera passé en tant que sudo
+  become: yes
+  
+  # On peut exécuter le playbook en tant qu'utilisateur spécifique
+  # remote_user: jeanMichel
+
+  tasks:
+    # Créer un fichier en tant que sudo
+    - name: Créer un fichier hello.txt
+      # On peut également le spécifier par tâche spécifique
+      # become: yes
+      ansible.builtin.file: 
+        name: via-sudo.txt
+        state: touch
+...

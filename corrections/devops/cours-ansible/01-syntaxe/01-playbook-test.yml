@@ -1,0 +1,16 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts 01-playbook-test.yml
+
+# Playbook complet en local, alternative à delegate_to & local_action
+- name: Test actions locales
+  hosts: 127.0.0.1
+  connection: local
+
+  # Une seule tâche
+  tasks:
+    - name: Créer un fichier hello.txt
+      ansible.builtin.file: 
+        name: hello.txt
+        state: touch
+...

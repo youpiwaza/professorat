@@ -1,0 +1,29 @@
+---
+- name: Mettre à jour la liste des paquets si on ne l'a pas déjà fait au cours de la dernière heure
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Nettoyage des eventuels conflits / apt --fix-broken install
+  apt:
+    state: fixed
+
+# La plupart des modules peuvent accepter des listes/dicos
+# https://docs.ansible.com/ansible/latest/modules/apt_module.html#apt-module
+- name: 'Ubuntu : installer plusieurs packages'
+  ansible.builtin.apt:
+    cache_valid_time: '3600'
+    force_apt_get: yes
+    # On réutilise le nom de la variable qui contient la liste
+    name: '{{ packagesToInstall }}'
+    update_cache: yes
+    state: latest
+
+- name: 'Maintenance des paquets : Supprimer les packages inutiles du cache'
+  apt:
+    autoclean: yes
+
+- name: 'Maintenance des paquets : Supprimer les dépendances qui ne sont plus utiles'
+  apt:
+    autoremove: yes
+...

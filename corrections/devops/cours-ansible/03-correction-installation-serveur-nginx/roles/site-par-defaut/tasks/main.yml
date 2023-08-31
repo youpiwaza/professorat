@@ -1,0 +1,18 @@
+---
+# Créer un site personnalisé par défaut
+#   🔍 https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html
+- name: Copier le dossier boilerplate (html, css, js)
+  ansible.builtin.copy:
+    src: ./templates/_html5boilerplate-light/
+    dest: /var/www/html/
+
+# Personnaliser la page d'accueil à l'aide de templates & variables
+#   🔍 https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html
+- name: Personnaliser la page d'accueil à l'aide de templates & variables
+  ansible.builtin.template:
+    src: ./templates/index.html.j2
+    dest: /var/www/html/index.html
+  # vars:
+  #   site_titre: Un site tout simple via Ansible
+  #   site_description : Avec du contenu modifié à l'aide de templates
+...

@@ -1,0 +1,54 @@
+---
+# 👌 Bonne pratique, ne pas hésiter à stocker les commandes manuelles, au cas ou
+#     Recharger la configuration de nginx
+#         nginx -s reload
+#     Forcer le démarrage de nginx
+#         /etc/init.d/nginx start
+
+- name: Démarrer le service nginx
+  service:
+    name: nginx
+    # Lancement au démarrage du sytème
+    enabled: true
+    # Lancement lors de l'execution de ce cookbook
+    state: started
+
+# 👌 Bonne pratique, ne pas hésiter à stocker les commandes manuelles, au cas ou
+#     Vérifier le status de nginx
+#         /etc/init.d/nginx status
+#     Forcer le démarrage de nginx
+#         /etc/init.d/nginx start
+
+# index.html à la priorité sur le fichier par défaut de nginx index.nginx-debian.html...
+- name: Supprimer les eventuels fichiers de la suite du script, afin d'autoriser les relances de scripts
+  file:
+    path: /var/www/html/index.html
+    state: absent
+
+- name: Remplacer le titre du site
+  # On ne change qu'une ligne
+  lineinfile:
+    # La ligne qui contient <h1>
+    regexp: '^<h1>'
+    # Est remplacée par notre texte
+    line: '<h1>Yay tout fonctionne !</h1>'
+    # Dans ce fichier
+    path: '/var/www/html/index.nginx-debian.html'
+
+- name: Vérifier la connexion au site (GET) et que la page renvoie un status 200
+  uri:
+    url: http://localhost:80 # OK
+
+- name: "On peut même vérifier que les mots 'Yay tout fonctionne !' sont présents sur la page !"
+  uri:
+    url: http://localhost:80
+    return_content: yes
+  register: da_webpage
+  # Erreur si ils ne sont pas la
+  failed_when: "'Yay tout fonctionne !' not in da_webpage.content"
+
+- debug:
+    msg:
+      - 'Affichage du contenu de la page :'
+      - '{{ da_webpage.content }}'
+...

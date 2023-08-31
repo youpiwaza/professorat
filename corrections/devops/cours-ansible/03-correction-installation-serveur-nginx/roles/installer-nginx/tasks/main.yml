@@ -1,0 +1,41 @@
+---
+- name: Nettoyage des eventuels conflits / apt --fix-broken install
+  apt:
+    state: fixed
+
+- name: Installation de nginx
+  apt:
+    name: nginx
+    update_cache: yes
+    state: latest
+    cache_valid_time: 3600
+
+- name: 'Maintenance des paquets : Supprimer les packages inutiles du cache'
+  apt:
+    autoclean: yes
+
+- name: 'Maintenance des paquets : Supprimer les dépendances qui ne sont plus utiles'
+  apt:
+    autoremove: yes
+
+- name: Supprimer la configuration de Nginx (potentiellement modifiée)
+  ansible.builtin.file:
+    path: /etc/nginx/sites-available/default
+    state: absent
+
+- name: Rétablir la configuration par défaut de Nginx
+  # On copie d'ici vers le "serveur"
+  ansible.builtin.copy:
+    src: ./config/nginx-default-config
+    dest: /etc/nginx/sites-available/default
+
+- name: Recharger Nginx suite à une modification de configuration
+  # action: service name=nginx state=reloaded
+  service:
+    name: nginx
+    state: reloaded
+
+# 👌 Bonne pratique, ne pas hésiter à stocker les commandes manuelles, au cas ou
+#     Forcer la mise à jour de la configuration
+#         nginx -s reload
+...

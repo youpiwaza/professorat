@@ -1,0 +1,15 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts 05-playbook-plusieurs-variables.yml
+
+- name: Syntaxe utiliser des variables
+  hosts: 127.0.0.1
+  connection: local
+  vars:
+    ma_premiere_variable: "11111"
+    ma_deuxieme_variable: "22222"
+
+  tasks:
+    - debug:
+        msg: "J'affiche la première variable : {{ ma_premiere_variable }} puis la deuxième : {{ ma_deuxieme_variable }}"
+...

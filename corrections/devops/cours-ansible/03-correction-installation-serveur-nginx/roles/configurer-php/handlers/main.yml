@@ -1,0 +1,15 @@
+---
+# Restart nginx, will be called in tasks/main.yml, thanks to notify:
+- name: Recharger Nginx suite à une modification de configuration
+  # action: service name=nginx state=reloaded
+  service:
+    name: nginx
+    state: reloaded
+
+# Restart PHP, will be called in tasks/main.yml, thanks to notify:
+- name: Recharger PHP suite à une modification de configuration
+  # action: service name=nginx state=reloaded
+  service:
+    name: php8.2-fpm
+    state: reloaded
+...

@@ -1,0 +1,23 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts 09-playbook-boucle-dictionnaire.yml
+
+# 🔍 Doc : https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_loops.html#iterating-over-a-dictionary
+
+- name: Syntaxe utiliser une boucle sur un dictionnaire
+  hosts: 127.0.0.1
+  connection: local
+  vars:
+    rockers:
+      drums: John Bonham
+      bass: John Paul Jones
+      guitar: Jimmy Page
+      vocals: Robert Plant
+
+  tasks:
+    - debug:
+        # Affichage des clés & valeurs
+        msg: "J'affiche les éléments du dictionnaire : {{ item.key }} - {{ item.value }}"
+      # Besoin d'utiliser un filtre sur le dictionnaire
+      loop: "{{ rockers | dict2items }}"
+...

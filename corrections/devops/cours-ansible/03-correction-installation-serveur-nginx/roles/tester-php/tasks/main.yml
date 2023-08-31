@@ -1,0 +1,16 @@
+---
+- name: Personnaliser la page d'accueil EN PHP à l'aide de templates & variables
+  ansible.builtin.template:
+    src: ./templates/index.php.j2
+    dest: /var/www/html/index.php
+
+- name: Ajouter une page phpinfo
+  ansible.builtin.template:
+    src: ./templates/phpinfo.php.j2
+    dest: /var/www/html/phpinfo.php
+
+- debug:
+    msg:
+      - "Votre site est maintenant accessible en local à l'url suivante :"
+      - 'http://localhost:{{ serveur_port }}'
+...

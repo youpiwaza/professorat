@@ -1,0 +1,26 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts 02-playbook-affichage-debug.yml
+
+# Les fichiers commencent par         ---
+# Les fichiers se terminent par       ...
+# Les commentaires sont précédés par  #
+
+- name: Syntaxe afficher quelque chose
+  hosts: 127.0.0.1
+  connection: local
+
+  # Plusieurs tâches enchainées
+  tasks:
+    # Afficher un message
+    - debug:
+        msg: Juste afficher un petit message
+    
+    # Afficher un autre message
+    - debug:
+        msg: "Un autre petit message avec un guillemet ' waouh"
+
+    # Attention au caractère : également
+    - debug:
+        msg: "Un autre petit message : avec deux points"
+...

@@ -1,0 +1,21 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts 07-playbook-dictionnaires.yml
+
+# 🔍 Doc : https://www.redhat.com/sysadmin/ansible-lists-dictionaries-yaml
+
+- name: Syntaxe utiliser des dictionnaires
+  hosts: 127.0.0.1
+  connection: local
+  vars:
+    # En gros ce sont des tableaux associatifs : clé => valeur
+    rockers:
+      drums: John Bonham
+      bass: John Paul Jones
+      guitar: Jimmy Page
+      vocals: Robert Plant
+
+  tasks:
+    - debug:
+        msg: "J'affiche le dictionnaire : {{ rockers }}"
+...

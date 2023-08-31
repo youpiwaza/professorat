@@ -1,0 +1,3 @@
+FROM alpine
+WORKDIR /home
+RUN /bin/ash -c 'touch hello.txt'

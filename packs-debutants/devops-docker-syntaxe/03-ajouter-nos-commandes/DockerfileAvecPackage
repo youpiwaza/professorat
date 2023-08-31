@@ -1,0 +1,5 @@
+# FROM ubuntu
+FROM alpine
+WORKDIR /home
+# RUN apt install nano
+RUN apk add nano

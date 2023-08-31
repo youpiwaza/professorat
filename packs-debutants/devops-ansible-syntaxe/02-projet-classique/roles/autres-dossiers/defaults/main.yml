@@ -1,0 +1,6 @@
+---
+# Utilisé afin de donner des valeurs par défaut aux variables si ces dernières ne sont pas remplies
+# Très pratique afin de faire des exemples fonctionnels, mais facilement réutilisables
+#     On lance le script une fois afin de voir ce qu'il fait (avec les défauts)
+#     Puis on surcharges en créant un fichiers dans /vars, contenant nos variables
+...

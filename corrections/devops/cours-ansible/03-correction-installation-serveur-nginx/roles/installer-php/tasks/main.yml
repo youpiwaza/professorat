@@ -1,0 +1,68 @@
+---
+# Le repo de PHP doit être ajouté aux sources apt
+#   🔍 https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html
+- name: Ajouter le repo php à la liste des sources dans apt
+  ansible.builtin.apt_repository:
+    # Ne pas oublier les guillemets, car le repo contient le caractère :
+    repo: 'ppa:ondrej/php'
+    state: present
+
+- name: Mise à jour de la liste des paquets, afin de rajouter le paquet PHP
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Installation de PHP
+  apt:
+    # Liste des packages officiels avec les versions, et les modules
+    #   🔍 https://launchpad.net/~ondrej/+archive/ubuntu/php/+index?batch=75
+    name: php8.2
+    update_cache: yes
+    state: latest
+    cache_valid_time: 3600
+
+# - name: Installation des modules PHP en une fois (une tâche)
+#   apt:
+#     pkg:
+#     - php8.2-cli
+#     - php8.2-bz2
+#     - php8.2-curl
+#     - php8.2-fpm
+#     - php8.2-intl
+#     - php8.2-mbstring
+#     update_cache: yes
+#     state: latest
+#     cache_valid_time: 3600
+
+- name: Installation des modules PHP de manière plus visible (tâches séparées)
+  apt:
+    name: '{{ item }}'
+    update_cache: yes
+    state: latest
+    cache_valid_time: 3600
+  loop:
+    - php8.2-cli
+    - php8.2-bz2
+    - php8.2-curl
+    - php8.2-fpm
+    - php8.2-intl
+    - php8.2-mbstring
+  
+- name: 'Maintenance des paquets : Supprimer les packages inutiles du cache'
+  apt:
+    autoclean: yes
+
+- name: 'Maintenance des paquets : Supprimer les dépendances qui ne sont plus utiles'
+  apt:
+    autoremove: yes
+
+# 👌 Bonne pratique, ne pas hésiter à stocker les commandes manuelles, au cas ou
+#     Vérifier le status de PHP
+#         /etc/init.d/php8.2-fpm status
+#     Forcer le lancement de PHP
+#         sudo service php8.2-fpm start
+- name: "Lancer le service PHP, permet de vérifier s'il s'exécute correctement"
+  ansible.builtin.service:
+    name: php8.2-fpm
+    state: started
+...

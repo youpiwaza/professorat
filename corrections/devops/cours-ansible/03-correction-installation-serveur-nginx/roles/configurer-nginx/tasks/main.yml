@@ -1,0 +1,40 @@
+---
+# Changer le port
+#   🔍 https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html
+# On peut soit utiliser directement un fichier de template
+# - name: 'Changer le port du serveur local pour {{ serveur_port }}'
+#   ansible.builtin.template:
+#     src: ./templates/default.j2
+#     dest: /etc/nginx/sites-available/default
+#   notify: Recharger Nginx suite à une modification de configuration
+#   vars:
+#     serveur_port: 8080
+
+
+# Soit utiliser la commande "Line in file" afin de remplacer de manière précise certaines lignes
+# Cette deuxième méthode est plus pérenne en cas de mise à jour du logiciel de base
+#   (Ajout ou suppression de configuration de la part de l'équipe de développement)
+
+#   🔍 https://docs.ansible.com/ansible/latest/collections/ansible/builtin/lineinfile_module.html
+
+# On modifie les deux lignes concernées
+#   Note : le caractère '^' indique le début de ligne en expression régulière
+#   Attention de ne pas chercher pour "listen 80" mais "listen 80 "
+#     Sinon lors de la réutilisation du script "listen 8080" serait inclus, sans l'espace
+- name: 'Changer le port du serveur local pour {{ serveur_port }}'
+  ansible.builtin.lineinfile:
+    path: /etc/nginx/sites-available/default
+    regexp: '^        listen 80 '
+    line: '        listen {{ serveur_port }} default_server;'
+  notify: Recharger Nginx suite à une modification de configuration
+
+- name: 'Changer le port du serveur local pour {{ serveur_port }}'
+  ansible.builtin.lineinfile:
+    path: /etc/nginx/sites-available/default
+    regexp: '^        listen \['
+    line: '        listen [::]:{{ serveur_port }} default_server;'
+  notify: Recharger Nginx suite à une modification de configuration
+
+# Dans tous les cas, on recharge la configuration de nginx uniquement en cas de changement, et une seule fois
+#   à l'aide de notify, qui appelera le handler correspondant dans 'roles/configurer-nginx/handlers/main.yml'
+...

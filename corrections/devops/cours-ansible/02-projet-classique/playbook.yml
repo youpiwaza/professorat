@@ -1,0 +1,17 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts playbook.yml
+
+# Playbook complet en local, alternative à delegate_to & local_action
+- name: Un projet avec différents rôles
+  hosts: 127.0.0.1
+  connection: local
+
+  # Chaque rôle va se référer à son propre dossier, et exécuter la tâche principale située dans /tasks/main.yml
+  roles:
+    - afficher-message
+    - installer-packages
+    # Possibilité de commenter les imports afin de tester au fur & à mesure
+    #   (Pas besoin de le décommenter il n'y a rien dedans, juste l'arborescence)
+    # - autres-dossiers
+...

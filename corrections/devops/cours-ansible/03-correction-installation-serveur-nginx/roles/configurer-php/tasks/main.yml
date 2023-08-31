@@ -1,0 +1,35 @@
+---
+# On utilise un template afin de modifier la configuration de nginx afin qu'il active PHP
+- name: 'Nginx > Activer PHP & Changer le port du serveur local pour {{ serveur_port }}'
+  ansible.builtin.template:
+    src: ./templates/default.j2
+    dest: /etc/nginx/sites-available/default
+  notify: Recharger Nginx suite à une modification de configuration
+
+# 👌 Bonne pratique, même si je n'utilise pas le template, je conserve le fichier de configuration original
+# 🧠 à noter que "lineinfile" s'assure que la ligne est présente, ce qui évite de la redondance si le script est relancé plusieurs fois
+
+- name: 'PHP > Configuration > Augmenter la RAM à {{ php_limite_ram }}'
+  ansible.builtin.lineinfile:
+    path: /etc/php/8.2/fpm/php.ini
+    # Peut importe la mémoire actuelle, on remplace
+    regexp: '^memory_limit ='
+    line: 'memory_limit = {{ php_limite_ram }}'
+  notify: Recharger PHP suite à une modification de configuration
+
+- name: 'PHP > Configuration > Activer les modules'
+  ansible.builtin.lineinfile:
+    path: /etc/php/8.2/fpm/php.ini
+    # Peut importe la mémoire actuelle, on remplace
+    regexp: '^;extension={{ item }}'
+    line: 'extension={{ item }}'
+  loop:
+    - curl
+    - intl
+    - mbstring
+    - pdo_mysql
+  notify: Recharger PHP suite à une modification de configuration
+
+# Vérifier le fichier de configuration à la main
+#     cat /etc/php/8.2/fpm/php.ini
+...

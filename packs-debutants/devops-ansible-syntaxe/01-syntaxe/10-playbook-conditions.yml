@@ -1,0 +1,37 @@
+---
+# Pour exécuter via ansible
+#     ansible-playbook -i hosts 10-playbook-conditions.yml
+
+# 🔍 Doc : https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_conditionals.html
+
+- name: Syntaxe utiliser des conditions
+  hosts: 127.0.0.1
+  connection: local
+  vars:
+    # Mots clés réservés true false, églament d'autres manières de les écrire
+    #   Ils peuvent être calculés, ou le résultat de vérifications (ex: est-ce qu'un fichier existe ?)
+    ma_variable_booleene_vraie: true
+    ma_variable_booleene_false: false
+
+  tasks:
+    - debug:
+        msg: "La première variable est vraie"
+      when: ma_variable_booleene_vraie
+    
+    # Cette tâche ne sera pas exécutée : skipping (la tâche est passée / omise)
+    - debug:
+        msg: "La première variable est fausse"
+      when: not ma_variable_booleene_vraie
+    
+    - debug:
+        msg: "La deuxième variable est fausse"
+      when: not ma_variable_booleene_false
+
+    
+    - debug:
+        msg: "L'une des deux variable est vraie"
+      # OU logique : soit l'une soit l'autre
+      when: ma_variable_booleene_vraie or ma_variable_booleene_false | bool
+
+    # Possibilité d'utiliser le ET logique "and", les opérateurs mathématiques >, <, etc.
+...
